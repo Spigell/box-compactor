@@ -2,12 +2,10 @@
 debug=$(config debug)
 [[ $debug ]] && set -x
 
-os=os
-
 if [[ $os == archlinux ]]; then
   echo "cleaning pacman cache..."
-  pacman -Scc
+  pacman -Scc --noconfirm || exit 11
+  echo "cleaned"
 else
   echo "Your os ($os) is not supported yet."
 fi
-
