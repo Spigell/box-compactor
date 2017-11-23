@@ -23,14 +23,14 @@ Script for cleaning VM before put it in box (Vagrant)
 
 ### clean_cache
 
-Default is 'true'
+Default is `true`
 
 Supported os:
  - archlinux
 
 ### zero_disk
 
-Default is 'true'
+Default is `true`
 
 # See also
 
